@@ -1,6 +1,7 @@
 package design_mode.template;
 
 /**
+ * 模板模式
  * @author huang_kangjie
  * @create 2018-04-27 11:11
  **/
