@@ -1,6 +1,6 @@
 package field;
 
-import excl.poi.util.ExcelVOAttribute;
+import excl.poi.export.ExcelVOAttribute;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;

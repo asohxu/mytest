@@ -1,6 +1,6 @@
 package field;
 
-import excl.poi.util.ExcelVOAttribute;
+import excl.poi.export.ExcelVOAttribute;
 
 /**
  *

@@ -1,4 +1,4 @@
-package excl.poi.util;
+package excl.poi.export;
 
 import jxl.Cell;
 import jxl.Sheet;

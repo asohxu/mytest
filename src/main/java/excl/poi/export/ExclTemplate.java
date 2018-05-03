@@ -1,4 +1,4 @@
-package excl.poi.util;
+package excl.poi.export;
 
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 
