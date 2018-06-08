@@ -1,15 +1,13 @@
-package test.thread.threadpool.pool;
+package thread.threadpool.pool;
+
+import common.StringUtil;
 
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.Properties;
 import java.util.concurrent.ThreadPoolExecutor;
-
-import com.common.util.StringUtil;
 
 /**
  * 1、有新的任务，开一个新的线程
@@ -27,7 +25,7 @@ public class MyTheadListener extends Thread{
 	public void run() {
 		while(true){
 			try {
-				ThreadPoolExecutor pool = MyThreadPool.getPoolInstance();
+				ThreadPoolExecutor pool = test.thread.threadpool.pool.MyThreadPool.getPoolInstance();
 				int activeCount = pool.getActiveCount();
 				System.out.println("系统当前存活线程数   ==>" + activeCount );
 				int count = Integer.valueOf(getValue("task.count"));
@@ -35,9 +33,9 @@ public class MyTheadListener extends Thread{
 				if(activeCount < count){
 					for (int i = 0; i < (count - activeCount); i++) {
 						String taskId = StringUtil.getUuid();
-						MyThreadTask task = new MyThreadTask(taskId+"Flag");
+						test.thread.threadpool.pool.MyThreadTask task = new test.thread.threadpool.pool.MyThreadTask(taskId+"Flag");
 						pool.execute(task);//往线程池中添加任务
-						MyTaskCache.getMyCacheInstance().addCahce(taskId, task);
+						test.thread.threadpool.pool.MyTaskCache.getMyCacheInstance().addCahce(taskId, task);
 					}
 				}
 				Thread.sleep(1000 * 10);
@@ -47,14 +45,14 @@ public class MyTheadListener extends Thread{
 //					
 //				}
 				String closeId = getValue("task.close");
-				MyThreadTask o = (MyThreadTask) MyTaskCache.getMyCacheInstance().getCahce(closeId);
+				test.thread.threadpool.pool.MyThreadTask o = (test.thread.threadpool.pool.MyThreadTask) test.thread.threadpool.pool.MyTaskCache.getMyCacheInstance().getCahce(closeId);
 				if(o != null){
 					System.out.println("需要关闭线程  id = " + closeId);
 					o.destroy();
 				}
 			} catch (Exception e) {
 				System.out.println("game over !");
-				MyThreadPool.getPoolInstance().shutdown();
+				test.thread.threadpool.pool.MyThreadPool.getPoolInstance().shutdown();
 				e.printStackTrace();
 			}
 		}

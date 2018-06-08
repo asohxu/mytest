@@ -1,4 +1,4 @@
-package test.thread.callable_test;
+package thread.callable_test;
 /**
  * @描述：
  *
@@ -7,9 +7,11 @@ package test.thread.callable_test;
  * @version v1.0.
  * 
  */
-import com.sun.org.apache.xalan.internal.utils.FeatureManager;
-
-import java.util.concurrent.*;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 
 /**
  * Created by qiu.li on 2015/9/21.
