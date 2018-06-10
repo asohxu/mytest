@@ -150,6 +150,14 @@
     </dependency>
     <!--cglib end-->
 
+    <!--fastjson start-->
+    <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>fastjson</artifactId>
+      <version>1.2.47</version>
+    </dependency>
+    <!--fastjson end-->
 
 
 
