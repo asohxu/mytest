@@ -1,5 +1,8 @@
 package https;
 
+import javax.net.ssl.HostnameVerifier;
+import javax.net.ssl.HttpsURLConnection;
+import javax.net.ssl.SSLSession;
 import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -15,10 +18,6 @@ import java.net.URLEncoder;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-import javax.net.ssl.HostnameVerifier;
-import javax.net.ssl.HttpsURLConnection;
-import javax.net.ssl.SSLSession;
-import com.alibaba.fastjson.JSONObject;
 
 /**
  * @author huang_kangjie
@@ -128,7 +127,6 @@ public class HTTPUtils {
       * 读取网络文件
       * @param address
       * @param headerParameters
-      * @param body
       * @param file
       * @return
       * @throws Exception
@@ -421,9 +419,9 @@ public class HTTPUtils {
                System.out.println(res);//打印返回参数
 
                res = res.substring(res.indexOf("{"));//截取
-               JSONObject result = JSONObject.parseObject(res);//转JSON
-
-               System.out.println(result.toString());//打印
+               //JSONObject result = JSONObject.parseObject(res);//转JSON
+               //
+               //System.out.println(result.toString());//打印
 
           } catch (Exception e) {
                // TODO 异常
