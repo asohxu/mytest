@@ -5,4 +5,4 @@
  * @author huangkangjie
  *
  */
-package test.thread.callable_test;
+package thread.callable_test;

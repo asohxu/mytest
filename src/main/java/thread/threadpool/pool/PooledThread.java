@@ -1,4 +1,4 @@
-package test.thread.threadpool.pool;
+package thread.threadpool.pool;
 
 public class PooledThread extends Thread 
 
@@ -96,7 +96,7 @@ public class PooledThread extends Thread
 
     
 
-    public java.lang.Runnable getTarget() 
+    public Runnable getTarget()
 
     {
 
@@ -198,7 +198,7 @@ public class PooledThread extends Thread
 
     
 
-    public synchronized void setTarget(java.lang.Runnable newTarget) 
+    public synchronized void setTarget(Runnable newTarget)
 
     {//设置新的target，并唤醒睡眠中的线程
 

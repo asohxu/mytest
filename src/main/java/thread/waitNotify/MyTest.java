@@ -1,4 +1,4 @@
-package test.thread.waitNotify;
+package thread.waitNotify;
 
 import java.util.HashMap;
 import java.util.Map;

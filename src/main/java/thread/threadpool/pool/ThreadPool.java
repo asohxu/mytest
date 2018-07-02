@@ -1,4 +1,4 @@
-package test.thread.threadpool.pool;
+package thread.threadpool.pool;
 
 import java.util.List;
 

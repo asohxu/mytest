@@ -1,4 +1,4 @@
-package test.thread.waitNotify;
+package thread.waitNotify;
 /**
  * 类说明
  *

@@ -1,4 +1,4 @@
-package test.thread.threadpool.test;
+package thread.threadpool.test;
 
 import java.util.concurrent.ScheduledThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;

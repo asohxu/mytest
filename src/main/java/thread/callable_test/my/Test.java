@@ -1,13 +1,12 @@
-package test.thread.callable_test.my;
+package thread.callable_test.my;
 
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.Executor;
+
+import thread.callable_test.my.bean.ResultBean;
+import thread.callable_test.my.callable.CallableTaskThread;
+
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
-
-import test.thread.callable_test.my.bean.ResultBean;
-import test.thread.callable_test.my.callable.CallableTaskThread;
 
 /**
  * @描述：
@@ -34,21 +33,21 @@ public class Test {
 		
 		executor.shutdown();
 		
-		try {
-			ResultBean rsb2 = rs2.get();
-			ResultBean rsb1 = rs1.get();
-			ResultBean rsb3 = rs3.get();
-			
-			System.out.println("线程1 返回code = " + rsb1.getCode() + " ;msg = " + rsb1.getMsg());
-			System.out.println("线程2 返回code = " + rsb2.getCode() + " ;msg = " + rsb2.getMsg());
-			System.out.println("线程3 返回code = " + rsb3.getCode() + " ;msg = " + rsb3.getMsg());
-			
-			
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		} catch (ExecutionException e) {
-			e.printStackTrace();
-		}
+		//try {
+		//	ResultBean rsb2 = rs2.get();
+		//	ResultBean rsb1 = rs1.get();
+		//	ResultBean rsb3 = rs3.get();
+     //
+		//	System.out.println("线程1 返回code = " + rsb1.getCode() + " ;msg = " + rsb1.getMsg());
+		//	System.out.println("线程2 返回code = " + rsb2.getCode() + " ;msg = " + rsb2.getMsg());
+		//	System.out.println("线程3 返回code = " + rsb3.getCode() + " ;msg = " + rsb3.getMsg());
+		//
+		//
+		//} catch (InterruptedException e) {
+		//	e.printStackTrace();
+		//} catch (ExecutionException e) {
+		//	e.printStackTrace();
+		//}
 		
 	}
 }

@@ -1,9 +1,10 @@
-package test.thread.threadpool.main;
+package thread.threadpool.main;
+
+import thread.threadpool.pool.MyTheadListener;
+import thread.threadpool.pool.MyThreadPool;
 
 import java.util.concurrent.ThreadPoolExecutor;
 
-import test.thread.threadpool.pool.MyTheadListener;
-import test.thread.threadpool.pool.MyThreadPool;
 
 
 /**
@@ -15,7 +16,7 @@ public class TreadMain {
 
 	public static void main(String[] args) {
 		ThreadPoolExecutor pool = MyThreadPool.getPoolInstance();
-		Thread listener = new  MyTheadListener();
+		Thread listener = new MyTheadListener();
 		listener.start();//启动监听
 		//pool.shutdown();
 	}

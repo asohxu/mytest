@@ -1,4 +1,4 @@
-package test.thread.callable_test.my.bean;
+package thread.callable_test.my.bean;
 /**
  * @描述：
  *
@@ -27,6 +27,13 @@ public class ResultBean {
 
 	public void setMsg(String msg) {
 		this.msg = msg;
+	}
+
+	/**
+	 * 回调
+	 */
+	public void callback(String str){
+		System.out.println(str);
 	}
 	
 }

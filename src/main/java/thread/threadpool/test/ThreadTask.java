@@ -1,4 +1,4 @@
-package test.thread.threadpool.test;
+package thread.threadpool.test;
 /**
  * 类说明
  *

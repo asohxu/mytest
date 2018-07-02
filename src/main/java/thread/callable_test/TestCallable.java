@@ -1,4 +1,4 @@
-package test.thread.callable_test;
+package thread.callable_test;
 /**
  * @描述：
  *
@@ -7,9 +7,11 @@ package test.thread.callable_test;
  * @version v1.0.
  * 
  */
-import com.sun.org.apache.xalan.internal.utils.FeatureManager;
-
-import java.util.concurrent.*;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 
 /**
  * Created by qiu.li on 2015/9/21.
@@ -35,7 +37,7 @@ public class TestCallable implements Callable<Boolean> {
         } catch (ExecutionException e) {
             e.printStackTrace();
         }
-//        r1.cancel(true);//r1是死循环，现在退出
+        //r1.cancel(true);//r1是死循环，现在退出
         runnableService.shutdownNow();
     }
 

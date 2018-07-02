@@ -1,4 +1,4 @@
-package test.thread;
+package thread;
 /**
  * 主线程 非主线程
  * 

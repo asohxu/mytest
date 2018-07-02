@@ -1,4 +1,4 @@
-package test.thread.synchronized1;
+package thread.synchronized1;
 /**
  * 存钱者
  *

@@ -1,4 +1,4 @@
-package test.thread.synchronized1;
+package thread.synchronized1;
 /**
  * 构建模拟两个人去银行存取钱
  * 一个区存钱

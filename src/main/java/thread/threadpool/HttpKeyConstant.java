@@ -1,4 +1,4 @@
-package test.thread.threadpool;
+package thread.threadpool;
 
 
 import java.util.Map;

@@ -1,4 +1,4 @@
-package test.thread;
+package thread;
 
 import java.util.concurrent.ArrayBlockingQueue;
 

@@ -1,4 +1,4 @@
-package test.thread;
+package thread;
 /**
  * 交替打印数字
  *

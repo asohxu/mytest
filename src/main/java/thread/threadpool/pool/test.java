@@ -1,4 +1,4 @@
-package test.thread.threadpool.pool;
+package thread.threadpool.pool;
 
 public class test {
 

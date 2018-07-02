@@ -1,15 +1,14 @@
-package test.thread.threadpool.pool;
+package thread.threadpool.pool;
+
+import common.StringUtil;
 
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.Properties;
 import java.util.concurrent.ThreadPoolExecutor;
 
-import com.common.util.StringUtil;
 
 /**
  * 1、有新的任务，开一个新的线程

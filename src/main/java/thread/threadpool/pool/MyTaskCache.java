@@ -1,8 +1,7 @@
-package test.thread.threadpool.pool;
+package thread.threadpool.pool;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
 
 /**
  * 线程任务缓存

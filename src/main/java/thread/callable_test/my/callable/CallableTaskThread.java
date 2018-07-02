@@ -1,9 +1,10 @@
-package test.thread.callable_test.my.callable;
+package thread.callable_test.my.callable;
+
+import thread.callable_test.my.bean.ResultBean;
 
 import java.util.Random;
 import java.util.concurrent.Callable;
 
-import test.thread.callable_test.my.bean.ResultBean;
 
 /**
  * @描述：
@@ -27,9 +28,10 @@ public class CallableTaskThread implements Callable<ResultBean>{
 		System.out.println(Thread.currentThread().getName() + ",开始执行call()");
 		
 		ResultBean rs = new ResultBean();
+
 		rs.setCode((new Random().nextInt(10)) + "");
 		rs.setMsg("成功");
-		
+
 		Thread.sleep(2000);
 		
 		if(no == 2){
@@ -37,6 +39,8 @@ public class CallableTaskThread implements Callable<ResultBean>{
 		}
 		
 		System.out.println(Thread.currentThread().getName() + "执行完毕call()，返回执行结果");
+
+		rs.callback(Thread.currentThread().getName() + " 调用callback");
 		
 		return rs;
 		

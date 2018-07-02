@@ -1,10 +1,8 @@
-package test.thread.threadpool.test;
+package thread.threadpool.test;
 
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
-
-import test.thread.threadpool.HttpKeyConstant;
 
 /**
  * 类说明

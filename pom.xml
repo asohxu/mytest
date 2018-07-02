@@ -150,6 +150,15 @@
     </dependency>
     <!--cglib end-->
 
+    <!--测试一个java类占用空间大小-->
+    <!-- https://mvnrepository.com/artifact/com.carrotsearch/java-sizeof -->
+    <dependency>
+      <groupId>com.carrotsearch</groupId>
+      <artifactId>java-sizeof</artifactId>
+      <version>0.0.5</version>
+    </dependency>
+
+
 
 
 
