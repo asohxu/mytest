@@ -30,7 +30,7 @@ public class MyTest {
 			Object objectA = objectMap.get("A");
 			synchronized (objectA) {
 				objectA.notifyAll();
-				System.out.println("唤醒的代码");
+				System.out.println("A唤醒前的代码");
 			}
 			Thread.sleep(1 * 1000);
 			Object objectB = objectMap.get("B");

@@ -34,6 +34,6 @@ public class MainThread extends Thread {
 	public static void main(String[] args) {
 		MainThread t = new MainThread();
 		t.start();
-		t.run();
+		//t.run();
 	}
 }
