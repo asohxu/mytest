@@ -6,7 +6,7 @@ package thread.synchronized1;
  * @version 创建时间：2017年3月2日
  * 
  */
-public class Bank {
+public class BankBean {
 
 	public Integer money = 0;
 
