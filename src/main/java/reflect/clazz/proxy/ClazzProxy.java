@@ -1,4 +1,4 @@
-package clazz.proxy;
+package reflect.clazz.proxy;
 /**
  * 利用Java的发射机制，动态代理
  *

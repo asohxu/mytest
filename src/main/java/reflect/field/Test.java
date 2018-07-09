@@ -1,4 +1,4 @@
-package field;
+package reflect.field;
 
 import excl.poi.export.ExcelVOAttribute;
 
@@ -16,7 +16,7 @@ public class Test {
      public static void main(String[] args) {
           try {
                //使用反射第一步:获取操作类UserBean所对应的Class对象
-               Class<?> cls = Class.forName("field.UserBean");
+               Class<?> cls = Class.forName("reflect.field.UserBean");
                //生成UserBean实例
                Object obj = cls.newInstance();
                Field[] fileds1 = cls.getFields();

@@ -1,4 +1,4 @@
-package clazz;
+package reflect.clazz;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -19,7 +19,7 @@ public class Clazz {
 	@SuppressWarnings("unchecked")
 	public static void main(String[] args) {
 		try {
-			clazz = (Class<Clazz>) Class.forName("clazz.Clazz");
+			clazz = (Class<Clazz>) Class.forName("reflect.clazz.Clazz");
 			try {
 				Method m = clazz.getDeclaredMethod("print", Map.class);
 				Map<String, Object> map = new HashMap<String, Object>();

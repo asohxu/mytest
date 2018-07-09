@@ -1,4 +1,4 @@
-package clazz;
+package reflect.clazz;
 
 /**
  * 类说明

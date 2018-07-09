@@ -1,4 +1,4 @@
-package clazz;
+package reflect.clazz;
 
 import java.io.Serializable;
 import java.lang.reflect.Constructor;
@@ -27,7 +27,7 @@ public class TestReflect implements Serializable{
         Class<?> class3 = null;
         // 一般采用这种形式
         try {
-			class1 = Class.forName("clazz.TestReflect");
+			class1 = Class.forName("reflect.clazz.TestReflect");
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
@@ -38,7 +38,7 @@ public class TestReflect implements Serializable{
         System.out.println("类名称   " + class3.getName());
         
         //获取一个对象的父类与实现的接口
-        Class<?> clazz = Class.forName("clazz.TestReflect");
+        Class<?> clazz = Class.forName("reflect.clazz.TestReflect");
         // 取得父类
         Class<?> parentClass = clazz.getSuperclass();
         System.out.println("clazz的父类为：" + parentClass.getName());
