@@ -18,7 +18,7 @@ public class InvokeMethods {
 		
 		Class cl = null;
 		try {
-			cl = Class.forName("clazz.Employee");
+			cl = Class.forName("reflect.clazz.Employee");
 		} catch (ClassNotFoundException e1) {
 			e1.printStackTrace();
 		}

@@ -53,15 +53,15 @@ public class TestReflect implements Serializable{
         // 1：java.io.Serializable
         
         Class<?> class4 = null;
-        class4 = Class.forName("clazz.User");
+        class4 = Class.forName("reflect.clazz.User");
         // 第一种方法，实例化默认构造方法，调用set赋值
         User user = (User) class4.newInstance();
-        user.setAge(20);
-        user.setName("Rollen");
-        System.out.println(user);
-        // 结果 User [age=20, name=Rollen]
-        // 第二种方法 取得全部的构造函数 使用构造函数赋值
-        Constructor<?> cons[] = class4.getConstructors();
+         user.setAge(20);
+         user.setName("Rollen");
+         System.out.println(user);
+         // 结果 User [age=20, name=Rollen]
+         // 第二种方法 取得全部的构造函数 使用构造函数赋值
+         Constructor<?> cons[] = class4.getConstructors();
         // 查看每个构造方法需要的参数
         for (int i = 0; i < cons.length; i++) {
             Class<?> clazzs[] = cons[i].getParameterTypes();
