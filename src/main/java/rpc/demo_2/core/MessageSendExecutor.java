@@ -14,6 +14,11 @@ public class MessageSendExecutor {
      private RpcServerLoader loader = RpcServerLoader.getInstance();
      private RpcSerializeProtocol serializeProtocol;
 
+     /**
+      * 消息发送执行器构造方法
+      * 1、启动一个客户端的时候把服务器地址加载好
+      * @param serverAddress
+      */
      public MessageSendExecutor(String serverAddress) {
           loader.load(serverAddress, serializeProtocol);
      }
